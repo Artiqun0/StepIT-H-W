@@ -3,42 +3,25 @@
 Drob reduction(Drob drob1)
 {
 	int num{};
-	bool check1{}, check2{};
 
-	if (drob1.denominator == drob1.numenator)
-	{
-		drob1.denominator = 1;
-		drob1.numenator = 1;
-		return drob1;
-	}
+	if (drob1.denominator > drob1.numenator)
+		num = drob1.numenator;
+	else
+		num = drob1.denominator;
 
-	else if (drob1.denominator > drob1.numenator)
+	for (size_t i = num; i > 0; i--)
 	{
-		num = drob1.numenator / 2;
-	}
-	else if (drob1.denominator < drob1.numenator)
-	{
-		num = drob1.denominator / 2;
-	}
-
-	for (size_t i = 2; i < num; i++)
-	{
-		if (drob1.denominator % i == 0)
-		{
-			check1 = true;
-		}
+		int y1 = 3, y2 = 4;
 		if (drob1.numenator % i == 0)
-		{
-			check2 = true;
-		}
+			y1 = 1;
+		if (drob1.denominator % i == 0)
+			y2 = 1;
 
-		if (check1 && check2)
+		if (y1 == y2)
 		{
 			num = i;
 			break;
 		}
-
-		check1 = false, check2 = false;
 	}
 
 	drob1.numenator /= num;
@@ -51,17 +34,10 @@ Drob Drob :: add(Drob drob1)
 {
 	Drob drob2{};
 
-	if (drob1.denominator == denominator)
-	{
-		drob2.numenator = drob1.numenator + numenator;
-		drob2.denominator = denominator + drob1.denominator;
-		return drob1;
-
-	}
 	drob2.numenator = (drob1.numenator * denominator) + (drob1.denominator * numenator);
 	drob2.denominator = (denominator * numenator);
 
-	return drob2;
+	return reduction(drob2);
 }
 
 Drob Drob::subtract(Drob drob1)
