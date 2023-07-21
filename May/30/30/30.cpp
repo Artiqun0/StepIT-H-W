@@ -16,7 +16,7 @@ int main()
 
 	cout
 		<< "Enter choice: " << endl
-		<< "1. Addition" << endl
+		<< "1. Adition" << endl
 		<< "2. Subtraction" << endl
 		<< "3. Multiplication" << endl
 		<< "4. Divicion" << endl;
@@ -35,6 +35,7 @@ int main()
 		cout << first * second;
 	else if (choice == 4)
 		cout << first / second;
+
 
 	return 0;
 }
