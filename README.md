@@ -1,1 +1,1 @@
-# StepIT-H-W
+# StepIT-H/W
