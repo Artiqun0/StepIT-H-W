@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(54, 62, 107);
+}
+h5 {
+  color: antiquewhite;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.container {
+  display: flex;
+  gap: 110px;
+}
+.common-list {
+  list-style-type: none;
+}
+.common-item {
+  color: aliceblue;
+  margin-bottom: 6px;
+}
+.common-item:hover {
+  text-decoration: underline;
+}
+i {
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 40px;
+  border-radius: 10pxpx;
+}
+.icons-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+.fa-facebook:hover {
+  color: blue;
+}
+.fa-square-instagram:hover {
+  color: rgb(191, 22, 143);
+}
+.fa-youtube:hover {
+  color: red;
+}
+hr {
+  margin: 0 20px;
+}

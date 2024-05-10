@@ -1,0 +1,62 @@
+.container {
+  background-color: #f3ecec;
+  padding: 20px;
+}
+
+.header {
+  margin-top: 10px;
+  font-family: arial;
+}
+
+.task-list {
+  margin-top: 50px;
+  list-style: none;
+  padding: 0;
+  font-family: Arial;
+}
+
+.task-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  display: none;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.task-checkbox:checked + label {
+  text-decoration: line-through;
+}
+
+.task-item label {
+  cursor: pointer;
+}
+
+.task-item::after {
+  content: "❌";
+  position: absolute;
+  left: 190px;
+  color: red;
+  font-size: 1.2em;
+}
+
+.task-list li:has(input:checked) {
+  background-color: #c0bebe;
+}
+
+.task-list li:nth-child(odd) {
+  background-color: rgba(226, 226, 226, 255);
+}
+
+.task-list li:nth-child(even) {
+  background-color: rgba(165, 204, 218, 255);
+}

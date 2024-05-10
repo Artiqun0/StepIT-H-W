@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.card {
+  width: 70px;
+  height: 50px;
+  margin-right: 10px;
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(211, 211, 211);
+}
+.red {
+  color: red;
+}
