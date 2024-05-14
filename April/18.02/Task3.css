@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+}
+
+.square {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: co;
+    outline: 1px solid black;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    width: 25%;
+    margin: 10px;
+    height: 400px;
+    border-radius: 10px;
+    transition: width 1s, height 1s;
+}
+
+.square:hover {
+    width: 40%;
+    height: 500px;
+}
+
+.header {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.red-line {
+    position: absolute;
+    top: 10%;
+    border: 1.5px solid red;
+    width: 100%;
+}
+
+.price {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.description{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

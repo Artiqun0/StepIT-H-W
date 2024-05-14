@@ -1,0 +1,55 @@
+.gray-surface{
+    height: 200px;
+    position: relative;
+    background-color: #efefef;
+    bottom: -483px;
+}
+
+.services-container {
+    position: relative;
+    top: -50px;
+    width: 60%;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    background-color: white;
+    display: flex;
+}
+
+#first-item {
+    background-color: white;
+    color: black;
+}
+
+#first-item:hover {
+    background-color: yellow;
+    color: white;
+}
+
+.container-item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    color: black;
+    transition: 0.5s;
+    font-size: 17px;
+    font-family:'Times New Roman', Times, serif;
+    gap: 20px;
+}
+
+.container-item img {
+    width: 100px;
+    transition: 0.5s;
+}
+
+.container-item:hover {
+    background-color: white;   
+}
+
+.container-item:hover img{
+    width: 120px;   
+}
